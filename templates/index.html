@@ -19,6 +19,37 @@
   </head>
   <body>
     <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+        <a class="navbar-brand" href="/">ML Learning Tool</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/learn/1">Basic Learning</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/quiz">Quiz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/summary">Summary</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
       <div class="header">
         <h1>Interactive Learning Tool for Machine Learning</h1>
         <p class="lead">
@@ -37,5 +68,8 @@
         </p>
       </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
   </body>
 </html>
