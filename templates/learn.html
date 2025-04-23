@@ -61,6 +61,7 @@
           aria-valuenow="{{ (current_page / total_pages) * 100 }}"
           aria-valuemin="0"
           aria-valuemax="100"
+          aria-label="Learning Progress"
         >
           {{ current_page }} / {{ total_pages }}
         </div>
@@ -90,7 +91,7 @@
               class="btn btn-outline-primary nav-button"
               data-direction="prev"
             >
-              <i class="fa fa-arrow-left"></i> Previous
+              <i class="fas fa-arrow-left"></i> Previous
             </a>
             {% else %}
             <span></span>
@@ -100,7 +101,7 @@
               class="btn btn-primary nav-button"
               data-direction="next"
             >
-              Next <i class="fa fa-arrow-right"></i>
+              Next <i class="fas fa-arrow-right"></i>
             </a>
             {% else %}
             <a
@@ -108,7 +109,7 @@
               class="btn btn-success nav-button"
               data-direction="quiz"
             >
-              Take Quiz <i class="fa fa-check-circle"></i>
+              Take Quiz <i class="fas fa-check-circle"></i>
             </a>
             {% endif %}
           </div>
