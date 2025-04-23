@@ -1,0 +1,142 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f8f9fa;
+  color: #343a40;
+  padding-top: 20px;
+}
+
+.header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.jumbotron {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.navigation-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.progress {
+  height: 8px;
+  margin-bottom: 20px;
+}
+
+.question-card {
+  border-left: 5px solid #007bff;
+  margin-bottom: 30px;
+}
+
+.option-btn {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+.option-btn:hover {
+  background-color: #e9ecef;
+}
+
+.option-btn.selected {
+  background-color: #007bff;
+  color: white;
+}
+
+.option-btn.correct {
+  background-color: #28a745;
+  color: white;
+}
+
+.option-btn.incorrect {
+  background-color: #dc3545;
+  color: white;
+}
+
+.explanation {
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 15px;
+  border-left: 3px solid #007bff;
+}
+
+.summary-section {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.quiz-result {
+  text-align: center;
+  padding: 20px;
+}
+
+.progress-indicator {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.progress-step {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #e9ecef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+  font-weight: bold;
+}
+
+.progress-step.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.progress-step.completed {
+  background-color: #28a745;
+  color: white;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #007bff;
+}
+
+.nav-pills .nav-link {
+  margin-right: 5px;
+}
+
+.start-btn {
+  font-size: 1.2rem;
+  padding: 12px 30px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.start-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
