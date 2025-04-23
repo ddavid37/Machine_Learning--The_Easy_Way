@@ -1,0 +1,92 @@
+[
+    {
+      "id": 1,
+      "title": "Introduction to Machine Learning",
+      "content": "<div class='container'><h2>Machine Learning – The Easy Way</h2><p>Machine Learning is a subset of artificial intelligence that enables systems to learn and improve from experience without being explicitly programmed. It focuses on developing algorithms that can access data and use it to learn for themselves.</p><p>By the end of this tutorial, you'll understand the fundamentals of machine learning and be able to identify which approach is best for different problems.</p></div>",
+      "navigation": {
+        "next": 2,
+        "prev": null
+      }
+    },
+    {
+      "id": 2,
+      "title": "Why Choosing the Right Model Matters",
+      "content": "<div class='container'><h2>Why Choosing the Right Model Matters</h2><p>Not all machine learning models are built the same — each one is designed to solve different kinds of problems.</p><ul><li>✅ Some models work best with large datasets</li><li>✅ Others are great for speed or easy-to-understand results</li><li>✅ Understanding the differences between supervised, unsupervised, and reinforcement learning is crucial</li></ul><p>In this tutorial, you'll learn how to choose the best model for your project by considering:</p><ul><li>📌 The type of prediction task (e.g., classification or regression)</li><li>📦 The structure and size of your data</li><li>🎯 Your priorities — whether it's accuracy, explainability, or scalability</li></ul></div>",
+      "navigation": {
+        "next": 3,
+        "prev": 1
+      }
+    },
+    {
+      "id": 3,
+      "title": "Types of Machine Learning Models: Supervised Learning",
+      "content": "<div class='container'><h2>Types of Machine Learning Models</h2><h3>🧠 Supervised Learning</h3><ul><li><strong>What it is:</strong> The model learns from labeled data (input + correct output).</li><li><strong>Example:</strong> Predicting the desired fruit based on characteristics in a labeled dataset.</li><li><strong>Common Use Cases:</strong> Classification, Regression</li></ul></div>",
+      "navigation": {
+        "next": 4,
+        "prev": 2
+      }
+    },
+    {
+      "id": 4,
+      "title": "Types of Machine Learning Models: Unsupervised Learning",
+      "content": "<div class='container'><h2>Types of Machine Learning Models</h2><h3>🔍 Unsupervised Learning</h3><ul><li><strong>What it is:</strong> The model explores patterns in unlabeled data.</li><li><strong>Example:</strong> Grouping vegetables by purchasing behavior without knowing which is which (the act called clustering).</li><li><strong>Common Use Cases:</strong> Clustering, Dimensionality Reduction</li></ul></div>",
+      "navigation": {
+        "next": 5,
+        "prev": 3
+      }
+    },
+    {
+      "id": 5,
+      "title": "Types of Machine Learning Models: Reinforcement Learning",
+      "content": "<div class='container'><h2>Types of Machine Learning Models</h2><h3>🎮 Reinforcement Learning</h3><ul><li><strong>What it is:</strong> The model learns by trial and error, receiving rewards or penalties.</li><li><strong>Example:</strong> Teaching an AI to play chess or drive a car.</li><li><strong>Common Use Cases:</strong> Robotics, Game AI, Real-time Decisions</li></ul></div>",
+      "navigation": {
+        "next": 6,
+        "prev": 4
+      }
+    },
+    {
+      "id": 6,
+      "title": "Regression vs Classification",
+      "content": "<div class='container'><h2>Regression vs Classification</h2><p><strong>What's your task?</strong></p><ul><li>Predict a categorical value (eg. transaction is fraud) → Classification</li><li>Predict a continuous value (eg. cost of a taxi ride) → Regression</li></ul><div class='row'><div class='col-md-6'><div class='card mb-4'><div class='card-body'><h5 class='card-title'>Classification model</h5><p class='card-text'>For this set of attributes, is this transaction fraud?</p><div class='text-center'><div class='btn-group' role='group'><button type='button' class='btn btn-danger'>Fraud</button><button type='button' class='btn btn-success'>Not Fraud</button></div></div></div></div></div><div class='col-md-6'><div class='card mb-4'><div class='card-body'><h5 class='card-title'>Regression model</h5><p class='card-text'>For this set of attributes the predicted price of this house is:</p><div class='input-group mb-3'><div class='input-group-prepend'><span class='input-group-text'>$</span></div><input type='text' class='form-control' placeholder='Continuous value'></div></div></div></div></div></div>",
+      "navigation": {
+        "next": 7,
+        "prev": 5
+      }
+    },
+    {
+      "id": 7,
+      "title": "Model Types for Classification",
+      "content": "<div class='container'><h2>Model Types for Classification</h2><p>Each model varies in accuracy, training time, and explainability.</p><table class='table table-bordered'><thead class='thead-light'><tr><th>Model</th><th>Best For</th><th>Description</th></tr></thead><tbody><tr><td>Logistic Regression</td><td>Binary classification</td><td>Simple and interpretable; assumes linear decision boundary</td></tr><tr><td>Decision Tree</td><td>Transparent decision-making</td><td>Visual and intuitive; works with both numerical and categorical features</td></tr></tbody></table></div>",
+      "navigation": {
+        "next": 8,
+        "prev": 6
+      }
+    },
+    {
+      "id": 8,
+      "title": "Model Types for Regression",
+      "content": "<div class='container'><h2>Model Types for Regression</h2><p>Choose based on your data complexity and need for interpretability.</p><table class='table table-bordered'><thead class='thead-light'><tr><th>Model</th><th>Best For</th><th>Description</th></tr></thead><tbody><tr><td>Linear Regression</td><td>Simple linear relationships</td><td>Easy to interpret, fast, works best with linearly related data</td></tr><tr><td>Decision Tree Regressor</td><td>Non-linear, interpretable solutions</td><td>Splits data into segments; good for mixed-type features</td></tr><tr><td>Support Vector Regressor (SVR)</td><td>Complex or high-dimensional regression</td><td>Good with small datasets and non-linear trends, but harder to interpret</td></tr></tbody></table></div>",
+      "navigation": {
+        "next": 9,
+        "prev": 7
+      }
+    },
+    {
+      "id": 9,
+      "title": "Decision Tool",
+      "content": "<div class='container'><h2>Decision Tool</h2><p><strong>What is your primary goal?</strong></p><div class='list-group mb-4'><button type='button' class='list-group-item list-group-item-action' onclick=\"logUserChoice('decision_tool', 'predict_categories')\">🎯 Predict categories (e.g., spam detection)</button><button type='button' class='list-group-item list-group-item-action' onclick=\"logUserChoice('decision_tool', 'interpret_results')\">📊 Interpret results clearly (e.g., credit scoring)</button></div><div class='alert alert-info'>💡 <strong>Hint:</strong> If you're losing direction, remember that selecting a model depends on your project priorities!</div></div>",
+      "navigation": {
+        "next": 10,
+        "prev": 8
+      }
+    },
+    {
+      "id": 10,
+      "title": "Ready to Test Your Knowledge",
+      "content": "<div class='container'><h2>🎉 Ready to Test Your Knowledge?</h2><p>You've learned the basics—now it's time to put that knowledge to the test!</p><p>Get ready for multiple-choice questions that will challenge what you've learned so far.</p><p>At the end, you'll see your score and find out how well you did.</p><p>You can retake the quiz as many times as you like. 💪</p><div class='text-center mt-4'><a href='/quiz' class='btn btn-primary btn-lg'>Start Quiz</a></div></div>",
+      "navigation": {
+        "next": null,
+        "prev": 9
+      }
+    }
+  ]
