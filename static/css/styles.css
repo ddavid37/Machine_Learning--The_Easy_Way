@@ -1,26 +1,23 @@
-/* === Theme Variables === */
 :root {
   --base-color: #343a40;
   --accent-color: #0d6efd;
   --light-grey: #f8f9fa;
   --dark-grey: #212529;
+  --bg: #98b8e3;
 }
 
-/* Global styles */
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #98b8e3;
+  background-color: var(--bg);
   color: var(--base-color);
   padding-top: 20px;
 }
 
-/* Header */
 .header {
   margin-bottom: 30px;
   text-align: center;
 }
 
-/* Jumbotron (home intro) */
 .jumbotron {
   background-color: #ffffff;
   border-radius: 15px;
@@ -29,14 +26,12 @@ body {
   margin-bottom: 30px;
 }
 
-/* Navigation buttons */
 .navigation-buttons {
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
 }
 
-/* Card effects */
 .card {
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
@@ -48,19 +43,16 @@ body {
   transform: translateY(-5px);
 }
 
-/* Progress bar */
 .progress {
   height: 8px;
   margin-bottom: 20px;
 }
 
-/* Quiz Question card */
 .question-card {
   border-left: 5px solid var(--accent-color);
   margin-bottom: 30px;
 }
 
-/* Option buttons */
 .option-btn {
   width: 100%;
   text-align: left;
@@ -88,7 +80,6 @@ body {
   color: white;
 }
 
-/* Explanation box */
 .explanation {
   background-color: var(--light-grey);
   border-radius: 5px;
@@ -97,7 +88,6 @@ body {
   border-left: 3px solid var(--accent-color);
 }
 
-/* Summary Section */
 .summary-section {
   background-color: #9298d3;
   border-radius: 10px;
@@ -106,13 +96,11 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-/* Quiz Result Section */
 .quiz-result {
   text-align: center;
   padding: 20px;
 }
 
-/* Progress Indicators */
 .progress-indicator {
   display: flex;
   justify-content: center;
@@ -141,7 +129,21 @@ body {
   color: white;
 }
 
-/* Navigation pills (if used) */
+.navbar {
+  background-color: var(--base-color);
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+  color: var(--light-grey) !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: white !important;
+  font-weight: 500;
+}
+
 .nav-pills .nav-link.active {
   background-color: var(--accent-color);
 }
@@ -150,7 +152,6 @@ body {
   margin-right: 5px;
 }
 
-/* Start button */
 .start-btn {
   font-size: 1.2rem;
   padding: 12px 30px;
