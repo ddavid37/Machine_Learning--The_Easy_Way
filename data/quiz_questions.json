@@ -1,56 +1,56 @@
 [
-    {
-      "id": "q1",
-      "question": "Task: Estimate the selling price of a house based on square footage and location. What type of ML task is this?",
-      "options": {
-        "A": "Regression",
-        "B": "Classification"
-      },
-      "correct_answer": "A",
-      "explanation": "This is a regression task because you're predicting a continuous numerical value (selling price). Regression models are designed for tasks where the output is a real number, like housing prices, temperatures, or salaries. Classification, on the other hand, would apply if you were predicting categories (e.g., 'High', 'Medium', 'Low' price range)."
+  {
+    "id": "q1",
+    "question": "Estimate the selling price of a house based on square footage and location. What type of ML task is this?",
+    "options": {
+      "A": "Regression",
+      "B": "Classification"
     },
-    {
-      "id": "q2",
-      "question": "Task: A bank wants to predict loan default risk and explain decisions to clients. Which model is the best fit?",
-      "options": {
-        "A": "Decision Tree",
-        "B": "Neural Network",
-        "C": "Support Vector Machine"
-      },
-      "correct_answer": "A",
-      "explanation": "Decision Tree is the best choice because of its interpretability: Decision trees provide clear, human-readable decision paths, making it easy to explain loan decisions to clients. While not always the most accurate, decision trees often perform well enough for structured data like loan applications. Neural Networks and SVMs are often considered black-box models and are much harder to interpret, especially for non-technical stakeholders."
+    "correct_answer": "A",
+    "explanation": "This is a regression task because you're predicting a continuous numerical value (selling price). Regression models handle continuous outputs; classification is for discrete categories."
+  },
+  {
+    "id": "q2",
+    "question": "A bank wants to predict loan default risk and explain decisions clearly to clients. Which model fits best?",
+    "options": {
+      "A": "Decision Tree",
+      "B": "Neural Network",
+      "C": "Support Vector Machine"
     },
-    {
-      "id": "q3",
-      "question": "Task: You need to classify emails as spam or not, instantly, at scale. Which model do you choose?",
-      "options": {
-        "A": "Logistic Regression",
-        "B": "k-Nearest Neighbors",
-        "C": "Decision Tree"
-      },
-      "correct_answer": "A",
-      "explanation": "Logistic Regression is the best choice because it's fast and scalable: Logistic Regression is lightweight and efficient, making it ideal for real-time classification like spam detection. It's perfect for binary classification like 'spam' vs. 'not spam' and works well with high-dimensional data (like text represented as word vectors or TF-IDF)."
+    "correct_answer": "A",
+    "explanation": "Decision Trees are ideal for interpretability — they offer clear, human-readable rules. Neural Networks and SVMs are harder to explain to non-technical users."
+  },
+  {
+    "id": "q3",
+    "question": "You need to classify emails as spam or not, instantly, at scale. Which model should you choose?",
+    "options": {
+      "A": "Logistic Regression",
+      "B": "k-Nearest Neighbors",
+      "C": "Decision Tree"
     },
-    {
-      "id": "q4",
-      "question": "Which type of machine learning involves learning patterns from labeled training data?",
-      "options": {
-        "A": "Unsupervised Learning",
-        "B": "Supervised Learning",
-        "C": "Reinforcement Learning"
-      },
-      "correct_answer": "B",
-      "explanation": "Supervised Learning involves training a model on labeled data, where each training example has an input and the correct output/target. The model learns to map inputs to outputs based on these examples."
+    "correct_answer": "A",
+    "explanation": "Logistic Regression is lightweight, fast, and works well for binary classification tasks like spam detection, especially with large, high-dimensional data."
+  },
+  {
+    "id": "q4",
+    "question": "Which type of machine learning involves learning patterns from labeled training data?",
+    "options": {
+      "A": "Unsupervised Learning",
+      "B": "Supervised Learning",
+      "C": "Reinforcement Learning"
     },
-    {
-      "id": "q5",
-      "question": "What type of machine learning technique would you use for customer segmentation based on purchasing patterns?",
-      "options": {
-        "A": "Clustering (Unsupervised Learning)",
-        "B": "Classification (Supervised Learning)",
-        "C": "Reinforcement Learning"
-      },
-      "correct_answer": "A",
-      "explanation": "Customer segmentation based on purchasing patterns typically uses clustering, an unsupervised learning technique. Clustering groups similar customers together without requiring labeled data about which group each customer belongs to."
-    }
-  ]
+    "correct_answer": "B",
+    "explanation": "Supervised Learning uses labeled examples to train models. Each input has a known output, helping the model learn mappings."
+  },
+  {
+    "id": "q5",
+    "question": "What technique would you use for customer segmentation based on purchasing patterns?",
+    "options": {
+      "A": "Clustering (Unsupervised Learning)",
+      "B": "Classification (Supervised Learning)",
+      "C": "Reinforcement Learning"
+    },
+    "correct_answer": "A",
+    "explanation": "Clustering (unsupervised learning) groups customers into segments without pre-labeled categories, making it ideal for discovering hidden patterns."
+  }
+]

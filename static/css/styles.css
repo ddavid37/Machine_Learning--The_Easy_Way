@@ -1,15 +1,26 @@
+/* === Theme Variables === */
+:root {
+  --base-color: #343a40;
+  --accent-color: #0d6efd;
+  --light-grey: #f8f9fa;
+  --dark-grey: #212529;
+}
+
+/* Global styles */
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #f8f9fa;
-  color: #343a40;
+  background-color: #98b8e3;
+  color: var(--base-color);
   padding-top: 20px;
 }
 
+/* Header */
 .header {
   margin-bottom: 30px;
   text-align: center;
 }
 
+/* Jumbotron (home intro) */
 .jumbotron {
   background-color: #ffffff;
   border-radius: 15px;
@@ -18,12 +29,14 @@ body {
   margin-bottom: 30px;
 }
 
+/* Navigation buttons */
 .navigation-buttons {
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
 }
 
+/* Card effects */
 .card {
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
@@ -35,16 +48,19 @@ body {
   transform: translateY(-5px);
 }
 
+/* Progress bar */
 .progress {
   height: 8px;
   margin-bottom: 20px;
 }
 
+/* Quiz Question card */
 .question-card {
-  border-left: 5px solid #007bff;
+  border-left: 5px solid var(--accent-color);
   margin-bottom: 30px;
 }
 
+/* Option buttons */
 .option-btn {
   width: 100%;
   text-align: left;
@@ -54,11 +70,11 @@ body {
 }
 
 .option-btn:hover {
-  background-color: #e9ecef;
+  background-color: var(--light-grey);
 }
 
 .option-btn.selected {
-  background-color: #007bff;
+  background-color: var(--accent-color);
   color: white;
 }
 
@@ -72,27 +88,31 @@ body {
   color: white;
 }
 
+/* Explanation box */
 .explanation {
-  background-color: #f8f9fa;
+  background-color: var(--light-grey);
   border-radius: 5px;
   padding: 15px;
   margin-top: 15px;
-  border-left: 3px solid #007bff;
+  border-left: 3px solid var(--accent-color);
 }
 
+/* Summary Section */
 .summary-section {
-  background-color: white;
+  background-color: #9298d3;
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
+/* Quiz Result Section */
 .quiz-result {
   text-align: center;
   padding: 20px;
 }
 
+/* Progress Indicators */
 .progress-indicator {
   display: flex;
   justify-content: center;
@@ -103,7 +123,7 @@ body {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: #e9ecef;
+  background-color: var(--light-grey);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -112,7 +132,7 @@ body {
 }
 
 .progress-step.active {
-  background-color: #007bff;
+  background-color: var(--accent-color);
   color: white;
 }
 
@@ -121,14 +141,16 @@ body {
   color: white;
 }
 
+/* Navigation pills (if used) */
 .nav-pills .nav-link.active {
-  background-color: #007bff;
+  background-color: var(--accent-color);
 }
 
 .nav-pills .nav-link {
   margin-right: 5px;
 }
 
+/* Start button */
 .start-btn {
   font-size: 1.2rem;
   padding: 12px 30px;
@@ -139,4 +161,18 @@ body {
 .start-btn:hover {
   transform: scale(1.05);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.basket {
+  min-height: 150px;
+  background-color: #c1c16d;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.draggable-item {
+  width: 80px;
+  margin: 10px;
+  cursor: grab;
 }

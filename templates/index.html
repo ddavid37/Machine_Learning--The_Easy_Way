@@ -1,75 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Interactive Learning Tool for Machine Learning</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="{{ url_for('static', filename='css/styles.css') }}"
-    />
-  </head>
-  <body>
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
-        <a class="navbar-brand" href="/">ML Learning Tool</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/learn/1">Basic Learning</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/quiz">Quiz</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/summary">Summary</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+<head>
+  <meta charset="UTF-8">
+  <title>ML Learning Tool</title>
+  <link href="/static/css/styles.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
 
-      <div class="header">
-        <h1>Interactive Learning Tool for Machine Learning</h1>
-        <p class="lead">
-          Learn the basics of Machine Learning in an interactive way!
-        </p>
-      </div>
-
-      <div class="jumbotron text-center">
-        <h2>Machine Learning – The Easy Way</h2>
-        <p class="lead">By Daniel David</p>
-        <hr class="my-4" />
-        <p>
-          Ready to embark on your machine learning journey? This interactive
-          tutorial will guide you through the fundamentals of machine learning
-          models and help you understan
-        </p>
-      </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">ML Learning Tool</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/learn/1">Basic Learning</a></li>
+        <li class="nav-item"><a class="nav-link" href="/quiz">Quiz</a></li>
+        <li class="nav-item"><a class="nav-link" href="/summary">Summary</a></li>
+      </ul>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
-  </body>
+  </div>
+</nav>
+
+<div class="container text-center my-5">
+  <h1 class="mb-3">Interactive Learning Tool for Machine Learning</h1>
+  <p class="lead">Learn the basics of Machine Learning in an interactive way!</p>
+
+  <div class="card my-5 p-4 shadow-sm">
+    <h2>Machine Learning – The Easy Way</h2>
+    <h5 class="text-muted">By Daniel David</h5>
+    <hr>
+    <p class="mt-3">Ready to embark on your machine learning journey? This interactive tutorial will guide you through the fundamentals of machine learning models and help you understand them in a fun way.</p>
+
+    <div class="d-flex justify-content-center mt-4 gap-3">
+      <a href="/learn/1" class="btn btn-primary btn-lg">🚀 Start Learning</a>
+      <a href="/quiz" class="btn btn-success btn-lg">📝 Test Yourself</a>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
