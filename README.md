@@ -26,19 +26,25 @@ This project is a simple web-based interactive learning tool designed to introdu
 
 ```
 /
-├── app.py                  # Main Flask application file
-├── requirements.txt        # Python dependencies
-├── static/
-│   ├── css/styles.css    # Custom stylesheets
-│   └── js/script.js      # Frontend JavaScript
-├── templates/
-│   ├── index.html        # Home page template
-│   ├── learn.html        # Learning content template
-│   ├── quiz.html         # Quiz page template
-│   └── summary.html      # User summary page template
-└── data/
-    ├── learning_content.json # Data for learning modules
-    └── quiz_questions.json   # Data for quiz questions
+├── LICENSE
+├── Makefile
+├── README.md
+├── app.py
+├── data
+│   ├── learning_content.json
+│   └── quiz_questions.json
+├── requirements.txt
+├── static
+│   ├── css
+│   │   └── styles.css
+│   ├── images/
+│   └── js
+│       └── script.js
+└── templates
+    ├── index.html
+    ├── learn.html
+    ├── quiz.html
+    └── summary.html
 ```
 
 ## 🛠️ Setup and Installation
