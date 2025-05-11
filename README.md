@@ -1,13 +1,26 @@
-# Interactive Learning Tool for Machine Learning
+# 🧠 Interactive Learning Tool for Machine Learning
 
-This project is a simple web-based interactive learning tool designed to introduce users to the basic concepts of Machine Learning. It provides learning content, interactive quizzes, and tracks user progress.
+This project is a simple web-based interactive learning tool designed to introduce users to the basic concepts of Machine Learning. It provides step-by-step content, interactive quizzes, and user activity tracking.
 
-## Features
+## 🚀 Features
 
-- **Learning Modules:** Step-by-step learning content loaded from JSON.
-- **Interactive Quiz:** Test your knowledge with multiple-choice questions.
-- **Progress Summary:** View your activity log and quiz results.
-- **User Session Tracking:** Basic session management to track individual user activity.
+- **Learning Modules** – Structured learning content loaded from JSON files.
+- **Interactive Quiz** – Test your knowledge through multiple-choice questions.
+- **Progress Summary** – View your quiz scores and activity log.
+- **User Session Tracking** – Track user activity using basic session management.
+
+## 📸 Screenshots
+
+### 🏠 Home Page  
+![Home Page](static/images/Screenshot_Home.png)
+
+### 📚 Interactive Learning Module  
+![Interactive Learning](static/images/Screenshot_Interactive_Learning.png)
+
+### ❓ Quiz Interface  
+![Quiz](static/images/Screenshot_Quiz.png)
+
+## 🗂️ Project Structure
 
 ## Project Structure
 
@@ -28,20 +41,19 @@ This project is a simple web-based interactive learning tool designed to introdu
     └── quiz_questions.json   # Data for quiz questions
 ```
 
-## Setup and Installation
+## 🛠️ Setup and Installation
 
-1.  **Clone the repository (if applicable):**
-
-    ```bash
-    git clone <repository-url>
-    cd <repository-directory>
-    ```
+1. **Clone the repository:**
+```bash
+git clone https://github.com/ddavid37/Machine_Learning--The_Easy_Way.git
+cd Machine_Learning--The_Easy_Way
+```
 
 2.  **Create a virtual environment (recommended):**
 
     ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+ python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
     ```
 
 3.  **Install dependencies:**
